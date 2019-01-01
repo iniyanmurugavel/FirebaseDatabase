@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.AddCrop">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        app:title="Add Crop"
+        android:id="@+id/toolbar"
+        app:titleTextColor="@android:color/white"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="wrap_content"></android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/cropname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="@string/crop_name"
+            android:inputType="text"
+            android:textColorHint="@android:color/holo_blue_dark"
+            app:met_autoValidate="false"
+            app:met_bottomTextSize="8dp"
+            app:met_clearButton="true"
+            app:met_errorColor="@android:color/holo_red_dark"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelAlwaysShown="false"
+            app:met_floatingLabelAnimating="true"
+            app:met_floatingLabelPadding="8dp"
+            app:met_floatingLabelText="@string/crop_name"
+            app:met_floatingLabelTextColor="@android:color/holo_blue_dark"
+            app:met_floatingLabelTextSize="14dp"
+            app:met_helperText=""
+            app:met_helperTextAlwaysShown="false"
+            app:met_helperTextColor="@android:color/background_dark"
+
+            app:met_iconPadding="8dp"
+            app:met_primaryColor="@android:color/holo_blue_dark"
+            app:met_singleLineEllipsis="true"
+            app:met_underlineColor="@color/white" />
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/marketprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="@string/marketprice"
+            android:inputType="number"
+            android:textColorHint="@android:color/holo_blue_dark"
+            app:met_autoValidate="false"
+            app:met_bottomTextSize="8dp"
+            app:met_clearButton="true"
+            app:met_errorColor="@android:color/holo_red_dark"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelAlwaysShown="false"
+            app:met_floatingLabelAnimating="true"
+            app:met_floatingLabelPadding="8dp"
+            app:met_floatingLabelText="@string/marketprice"
+            app:met_floatingLabelTextColor="@android:color/holo_blue_dark"
+            app:met_floatingLabelTextSize="14dp"
+            app:met_helperText=""
+            app:met_helperTextAlwaysShown="false"
+            app:met_helperTextColor="@android:color/background_dark"
+
+            app:met_iconPadding="8dp"
+            app:met_primaryColor="@android:color/holo_blue_dark"
+            app:met_singleLineEllipsis="true"
+            app:met_underlineColor="@color/white" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/scheduleprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="@string/scheduleprice"
+            android:inputType="number"
+            android:textColorHint="@android:color/holo_blue_dark"
+            app:met_autoValidate="false"
+            app:met_bottomTextSize="8dp"
+            app:met_clearButton="true"
+            app:met_errorColor="@android:color/holo_red_dark"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelAlwaysShown="false"
+            app:met_floatingLabelAnimating="true"
+            app:met_floatingLabelPadding="8dp"
+            app:met_floatingLabelText="@string/scheduleprice"
+            app:met_floatingLabelTextColor="@android:color/holo_blue_dark"
+            app:met_floatingLabelTextSize="14dp"
+            app:met_helperText=""
+            app:met_helperTextAlwaysShown="false"
+            app:met_helperTextColor="@android:color/background_dark"
+
+            app:met_iconPadding="8dp"
+            app:met_primaryColor="@android:color/holo_blue_dark"
+            app:met_singleLineEllipsis="true"
+            app:met_underlineColor="@color/white" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:focusable="false"
+            android:hint="@string/quanity_perkg"
+            android:inputType="number"
+            android:text="1kg"
+            android:textColorHint="@android:color/holo_blue_dark"
+            app:met_autoValidate="false"
+            app:met_bottomTextSize="8dp"
+            app:met_clearButton="true"
+            app:met_errorColor="@android:color/holo_red_dark"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelAlwaysShown="false"
+            app:met_floatingLabelAnimating="true"
+            app:met_floatingLabelPadding="8dp"
+            app:met_floatingLabelText="@string/quanity_perkg"
+            app:met_floatingLabelTextColor="@android:color/holo_blue_dark"
+            app:met_floatingLabelTextSize="14dp"
+            app:met_helperText=""
+            app:met_helperTextAlwaysShown="false"
+            app:met_helperTextColor="@android:color/background_dark"
+            app:met_iconPadding="8dp"
+            app:met_primaryColor="@android:color/holo_blue_dark"
+            app:met_singleLineEllipsis="true"
+            app:met_underlineColor="@color/white" />
+
+
+        <LinearLayout
+            android:id="@+id/layout_button"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnChoose"
+                android:text="Choose"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnUpload"
+                android:text="Upload"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/imgView"
+                android:visibility="gone"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>
